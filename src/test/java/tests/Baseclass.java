@@ -29,6 +29,11 @@ public class Baseclass {
 
          // Allure command - allure serve target/allure-results
         //mvn test -Psmoke -Dbrowser=chrome
+
+//         git init , git add . , git status,git commit -m "first push to repo",
+//         git remote add origin https://github.com/rehmansabbu/PlaywrightJavaFramework.git
+//        git branch , git push origin master
+
         String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
         String envName = System.getProperty("env") != null ? System.getProperty("env") : prop.getProperty("env");
         System.out.println("browser name is "+browserName);
