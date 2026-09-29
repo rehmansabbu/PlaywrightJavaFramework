@@ -1,0 +1,28 @@
+[
+  {
+
+    "title": "QA Event Workshop",
+    "city" : "California",
+    "address" : "California sector 2",
+    "datetime" : "2026-10-30T15:32",
+    "price" : "100",
+    "totalseat" : "300",
+    "name" : "sabbu",
+    "email": "rehman@gmail.com",
+    "phone": "8789654323"
+  },
+
+  {
+
+    "title": "Playwright Event Workshop",
+    "city" : "Dama",
+    "address" : "Dama sector 2",
+    "datetime" : "2026-10-30T15:32",
+    "price" : "100",
+    "totalseat" : "300",
+    "name" : "sabbu",
+    "email": "rehman@gmail.com",
+    "phone": "8789654323"
+  }
+
+]

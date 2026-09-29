@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="classes" thread-count="3">
+    <test name="Regression1" >
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+<!--        When I mention group mention "smoke" If I tagged smoke inside the @test only tagged
+            @smoke will run Note: Other class test will not run and always set the  tagged
+            @BeforeMethod (alwaysRun = true) then it would run so we can filter out the Test which i want
+            to run by using groups name like "smoke" , "Regression"
+
+             verbose ="1" => Its enogh to get the output how many test case failed or pass
+             verbose ="10"  => Detailed output , we consider on 1
+             -->
+
+        <classes>
+            <class name="tests.FrameworkBuildTest" />
+            <class name="tests.PracticePageTest" />
+            <class name="tests.BasicChildWindowHandlingTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Smoke1">-->
+<!--        <classes>-->
+<!--            <class name="tests.BasicChildWindowHandlingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
