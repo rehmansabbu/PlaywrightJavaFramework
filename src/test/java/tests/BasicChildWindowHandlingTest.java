@@ -14,7 +14,7 @@ public class BasicChildWindowHandlingTest {
     @BeforeMethod (alwaysRun = true)
     public void setUp(){
         playwright = Playwright.create();
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
 
 
     }
@@ -54,7 +54,7 @@ public class BasicChildWindowHandlingTest {
 
         // Back to main window Page
         pageA.locator("#username").fill(finalText);
-        pageA.pause();
+       // pageA.pause();
 
 
         context.close();

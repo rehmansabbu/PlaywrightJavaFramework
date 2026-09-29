@@ -32,7 +32,7 @@ public class BasicTest {
         // Browser browser =playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
 
 
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
         page = browser.newPage();
         page.setDefaultTimeout(8000); // 8 second
         page.navigate("https://eventhub.rahulshettyacademy.com/login");

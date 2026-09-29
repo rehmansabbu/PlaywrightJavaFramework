@@ -12,7 +12,7 @@ public class Practice {
     @Test (description = "UI => Testing for practice")
     public void DemoTest() {
         Playwright playwright = Playwright.create();
-        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
         BrowserContext context = browser.newContext();
 
         Page pageA = context.newPage();
