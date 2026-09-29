@@ -41,28 +41,19 @@ public class Baseclass {
 
         if ("firefox".equalsIgnoreCase(browserName)) {
 
-            browser = playwright.firefox()
-                    .launch(new BrowserType.LaunchOptions()
-                            .setHeadless(false));
+            browser = playwright.firefox().launch();
 
         } else if ("webkit".equalsIgnoreCase(browserName)) {
 
-            browser = playwright.webkit()
-                    .launch(new BrowserType.LaunchOptions()
-                            .setHeadless(false));
+            browser = playwright.webkit().launch();
 
         } else if ("chrome".equalsIgnoreCase(browserName)) {
 
-            browser = playwright.chromium()
-                    .launch(new BrowserType.LaunchOptions()
-                            .setHeadless(false)
-                            .setChannel("chrome"));
+            browser = playwright.chromium().launch();
 
         } else if ("chromium".equalsIgnoreCase(browserName)) {
 
-            browser = playwright.chromium()
-                    .launch(new BrowserType.LaunchOptions()
-                            .setHeadless(false));
+            browser = playwright.chromium().launch();
 
         } else {
 
